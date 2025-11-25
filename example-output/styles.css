@@ -1,0 +1,283 @@
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background: #f5f5f5;
+}
+
+/* Container for Figma frame */
+.figma-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  background: white;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #667eea;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+/* Button styles */
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  outline: none;
+  transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  white-space: nowrap;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Ensure button text is perfectly centered */
+button>* {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Ensure images don't overflow */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.frame-0 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  padding: 170px 0px 0px 0px;
+  width: 393px;
+  min-height: 852px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 32px;
+}
+
+.home-indicator-1 {
+  align-self: center;
+  width: 90px;
+  height: 21px;
+  order: 999;
+}
+
+.home-indicator-2 {
+  bottom: 0;
+  left: 50%;
+  width: 139px;
+  height: 5px;
+  background-color: rgb(44, 25, 77);
+  border-radius: 100px;
+  transform: translateX(-50%);
+}
+
+.headline-3 {
+  width: 154px;
+  height: 58px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  letter-spacing: -0.96px;
+  text-align: left;
+  color: rgb(54, 51, 65);
+}
+
+.frame-1321318736-4 {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 329px;
+  min-height: 117px;
+}
+
+.frame-1321318734-5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  gap: 10px;
+  padding: 20px 16px;
+  width: 329px;
+  min-height: 58px;
+  border: 1px solid rgb(215, 215, 215);
+}
+
+.headline-6 {
+  width: 120px;
+  height: 18px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: rgb(54, 51, 65);
+}
+
+.frame-1321318735-7 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  gap: 10px;
+  padding: 20px 16px;
+  width: 329px;
+  min-height: 59px;
+  border: 1px solid rgb(215, 215, 215);
+}
+
+.headline-8 {
+  width: 69px;
+  height: 18px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: rgb(192, 192, 192);
+}
+
+.frame-9 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 8px;
+  width: 361px;
+  min-height: 46px;
+  background: linear-gradient(180deg, rgb(149, 34, 140) 0.00%, rgb(58, 60, 179) 100.00%);
+  border-radius: 62px;
+  backdrop-filter: blur(10px);
+}
+
+.label-text-10 {
+  align-self: center;
+  width: 49px;
+  height: 22px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.15px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.frame-11 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 8px;
+  width: 361px;
+  min-height: 46px;
+  background-color: rgb(225, 224, 230);
+  border-radius: 62px;
+  backdrop-filter: blur(10px);
+}
+
+.label-text-12 {
+  align-self: center;
+  width: 110px;
+  height: 22px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.15px;
+  text-align: center;
+  color: rgb(54, 51, 65);
+}
+
+.headline-13 {
+  align-self: center;
+  width: 361px;
+  height: 37px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15.6px;
+  letter-spacing: -0.26px;
+  text-align: center;
+  color: rgba(54, 51, 65, 0.800000011920929);
+}

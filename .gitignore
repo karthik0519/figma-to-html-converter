@@ -1,0 +1,16 @@
+node_modules
+dist
+.DS_Store
+*.log
+.env
+.env.local
+coverage
+*.tsbuildinfo
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.tmp
+temp
+tmp
